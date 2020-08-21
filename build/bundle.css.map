@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../../Tab.svelte",
+    "../../TabList.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\timport { getContext } from 'svelte';\n\timport { TABS } from './Tabs.svelte';\n\n\tconst tab = {};\n\tconst { registerTab, selectTab, selectedTab } = getContext(TABS);\n\n\tregisterTab(tab);\n</script>\n\n<style>\n\tbutton {\n\t\tbackground: none;\n\t\tborder: none;\n\t\tborder-bottom: 2px solid white;\n\t\tborder-radius: 0;\n\t\tmargin: 0;\n\t\tcolor: #ccc;\n\t}\n\t\n\t.selected {\n\t\tborder-bottom: 2px solid teal;\n\t\tcolor: #333;\n\t}\n</style>\n\n<button class:selected=\"{$selectedTab === tab}\" on:click=\"{() => selectTab(tab)}\">\n\t<slot></slot>\n</button>",
+    "<div class=\"tab-list\">\n\t<slot></slot>\n</div>\n\n<style>\n\t.tab-list {\n\t\tborder-bottom: 1px solid teal;\n\t}\n</style>"
+  ],
+  "names": [],
+  "mappings": "AAWC,MAAM,cAAC,CAAC,AACP,UAAU,CAAE,IAAI,CAChB,MAAM,CAAE,IAAI,CACZ,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CAC9B,aAAa,CAAE,CAAC,CAChB,MAAM,CAAE,CAAC,CACT,KAAK,CAAE,IAAI,AACZ,CAAC,AAED,SAAS,cAAC,CAAC,AACV,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,IAAI,CAC7B,KAAK,CAAE,IAAI,AACZ,CAAC;AClBD,SAAS,eAAC,CAAC,AACV,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,IAAI,AAC9B,CAAC"
+}
