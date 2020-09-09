@@ -65,3 +65,19 @@ button:focus {
 	border-color: #666;
 }
 */
+
+.cleints .col-one-fourth {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+	position: relative;
+	min-height: 100px;
+
+}
+
+.clients-logo {
+    max-width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
