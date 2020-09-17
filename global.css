@@ -67,12 +67,21 @@ button:focus {
 */
 
 .cleints .col-one-fourth {
-    background: #fff;
+    /*background: #fff;*/
     border-radius: 8px;
     padding: 10px;
 	position: relative;
 	min-height: 100px;
+}
 
+
+.cleints .row .col-one-fourth {
+	float: left;
+	margin: 0 1%;
+}
+
+.cleints .row .col-one-fourth {
+    width: 18%;
 }
 
 .clients-logo {
