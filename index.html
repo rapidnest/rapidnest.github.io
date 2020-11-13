@@ -16,4 +16,20 @@
 <body class="page page-home preload">
 </body>
 <script src="js/main.js"></script>
+<script>
+	(function(d,t) {
+	  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src="https://support.therapidnest.com/embed.js"
+	  s.parentNode.insertBefore(g,s);
+	  g.onload=function(){
+		new window.ChaskiqMessengerEncrypted({
+		  domain: 'https://support.therapidnest.com',
+		  ws:  'wss://support.therapidnest.com/cable',
+		  app_id: "tStVjsJyU4yt-8M7dwbSRA",
+		  data: "YOUR_ENCRYPTED_JWE_DATA",
+		  lang: "USER_LANG_OR_DEFAULTS_TO_BROWSER_LANG" 
+		})
+	  }
+	})(document,"script");
+  </script>
 </html>
